@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main -Entry point
@@ -8,20 +6,21 @@
  */
 int main(void)
 {
-	int n, y;
+	int n, m;
 
-	for (n = '0'; y < '9'; n++)
+	for (n = 48; n <= 56; n++)
 	{
-		for (y = n + 1; y <= '9'; y++)
+		for (m = 49; m <= 57; m++)
 		{
-			if (y != n)
+			if (m > n)
 			{
 				putchar(n);
-				putchar(y);
-				if (n == '8' && y == '9')
-					continue;
-				putchar(',');
-				putchar(' ');
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
