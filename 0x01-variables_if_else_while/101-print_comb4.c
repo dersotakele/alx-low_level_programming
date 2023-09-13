@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main -Entry point
@@ -8,23 +6,24 @@
  */
 int main(void)
 {
-	int d, p, q;
+	int n, m, l;
 
-	for (d = '0' ; d < '9'; d++)
+	for (n = 48; n < 58; n++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (m = 49; m < 58; m++)
 		{
-			for (q = p + 1; q <= '9'; q++)
+			for (l = 50; l < 58; l++)
 			{
-				if ((p != d) != q)
+				if (l > m && m > n)
 				{
-					putchar(d);
-					putchar(p);
-					putchar(d);
-					if (d == '/' && p == '8')
-						continue;
-					putchar(',');
-					putchar(' ');
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
