@@ -7,10 +7,10 @@
  * Return:multiplcation
  */
 
-int mul(int n, int m)
+int mul(int x, int y)
 {
 	int multproduct;
 
-	multproduct = n * m;
+	multproduct = x * y;
 	return (multproduct);
 }
