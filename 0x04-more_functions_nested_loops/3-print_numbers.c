@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers to print basic integers
+ * print_numbers-function to print basic integers
  */
 
 void print_numbers(void)
 {
-	char i;
+	char num;
 
-	for (i = 48; i <= 57; i++)
+	for (num = 48; num <= 57; num++)
 	{
-		_putchar(i);
+		_putchar(num);
 	}
 	_putchar('\n');
 }
