@@ -2,15 +2,11 @@
 
 /**
  * _isupper-function to Check for upper case
- *@x: the letter checked
+ * @c:check for character argument
  * Return:1 int data typee
  */
 
-int _isupper(int x)
+int _isupper(int c)
 {
-	if (x >= 'A' && x <= 'z')
-	{
-		return(1);
-	}
-	return(0);
+	return (c >= 'A' && c <= 'Z');
 }
