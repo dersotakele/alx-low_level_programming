@@ -1,16 +1,14 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_numbers-function to print basic integers
- */
-
+*print_numbers - print the numbers 0 to 9
+*
+*/
 void print_numbers(void)
 {
-	char num;
+	int a;
 
-	for (num = 48; num <= 57; num++)
-	{
-		_putchar(num);
-	}
+	for (a = '0'; a <= '9'; a++)
+		_putchar(a);
 	_putchar('\n');
 }
